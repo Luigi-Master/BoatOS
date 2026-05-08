@@ -1,0 +1,12 @@
+/* ... (Previous CSS remains the same) ... */
+
+/* File Manager Styles */
+.file-manager { display: flex; flex-direction: column; height: 100%; background: var(--win-bg); }
+.file-toolbar { padding: 6px; background: rgba(13,33,54,0.9); border-bottom: 1px solid var(--win-border); display: flex; gap: 6px; align-items: center; }
+.file-path { flex: 1; background: #071422; border: 1px solid var(--win-border); border-radius: 4px; padding: 4px 8px; color: var(--text); font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.file-grid { flex: 1; padding: 10px; overflow-y: auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); gap: 10px; align-content: start; }
+.f-item { display: flex; flex-direction: column; align-items: center; padding: 8px; border-radius: 6px; cursor: pointer; text-align: center; transition: 0.2s; }
+.f-item:hover { background: rgba(77,166,255,0.15); }
+.f-item.folder .f-icon { color: #ffd43b; }
+.f-icon { font-size: 28px; margin-bottom: 4px; }
+.f-name { font-size: 10px; color: var(--text); word-break: break-word; max-width: 100%; overflow: hidden; text-overflow: ellipsis; }
