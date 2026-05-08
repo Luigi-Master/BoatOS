@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🚢 BoatOS v5.0</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="desktop">
+    <div id="desktop-icons">
+      <div class="icon" data-app="browser"><div class="icon-img">🌐</div><div class="icon-label">Browser</div></div>
+      <div class="icon" data-app="terminal"><div class="icon-img">💻</div><div class="icon-label">Terminal</div></div>
+      <div class="icon" data-app="files"><div class="icon-img">📁</div><div class="icon-label">Files</div></div>
+      <div class="icon" data-app="calc"><div class="icon-img">🧮</div><div class="icon-label">Calculator</div></div>
+      <div class="icon" data-app="about"><div class="icon-img">⚓</div><div class="icon-label">About</div></div>
+    </div>
+
+    <div id="start-menu">
+      <div class="menu-title">Applications</div>
+      <div class="menu-item" data-app="browser">🌐 Web Browser</div>
+      <div class="menu-item" data-app="terminal">💻 Terminal</div>
+      <div class="menu-item" data-app="files">📁 File Manager</div>
+      <div class="menu-item" data-app="calc">🧮 Calculator</div>
+      <div class="menu-sec">
+        <div class="menu-title">System</div>
+        <div class="menu-item" data-app="about">⚓ About BoatOS</div>
+        <div class="menu-item" id="menu-restart">🔄 Restart</div>
+      </div>
+    </div>
+
+    <div id="taskbar">
+      <button id="start-btn">⚓ Start</button>
+      <div id="taskbar-apps"></div>
+      <div id="clock">00:00</div>
+    </div>
+
+    <div id="window-container"></div>
+    <div id="glass-overlay"></div>
+  </div>
+
+  <!-- Load VFS first, then Main -->
+  <script src="vfs.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
